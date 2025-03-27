@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My 3D Model Viewer</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #111;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        model-viewer {
+            width: 80%;
+            height: 80vh;
+            background-color: #222;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🧊 My 3D Models</h1>
+
+    <model-viewer src="bagOpen.glb" alt="A 3D model" auto-rotate camera-controls ar></model-viewer>
+    <model-viewer src="Bag.glb" alt="A 3D model" auto-rotate camera-controls ar></model-viewer>
+</body>
+
+</html>
